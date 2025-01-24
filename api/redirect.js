@@ -13,9 +13,11 @@ export default function handler(req, res) {
   const userAgent = req.headers['user-agent'] || '';
   const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
 
-  // Get the user's IP address
-  const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-  const geo = geoip.lookup(ip); // Get location details
+  // Get the user's IP address from Vercel's headers
+  const ip = req.headers['x-real-ip'] || req.headers['x-forwarded-for']?.split(',')[0] || '0.0.0.0';
+
+  // Lookup IP to get geolocation
+  const geo = geoip.lookup(ip);
 
   const isFromUK = geo && geo.country === 'GB'; // Check if the user is from the UK
 
