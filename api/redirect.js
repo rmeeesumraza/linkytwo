@@ -20,7 +20,8 @@ export default function handler(req, res) {
   const geo = geoip.lookup(ip);
 
   const isFromUK = geo && geo.country === 'GB'; // Check if the user is from the UK
-
+console.log('User IP:', ip);
+console.log('Geo Info:', geo);
   // Redirection logic
   if (utmCampaign === '__AID_NAME__') {
     // UTM campaign 'l1' takes priority for both desktop and mobile
